@@ -11,7 +11,7 @@ If you find our work useful, please consider giving a `star` ⭐️!
 ---
 
 ## 📢 News
-
+* **[2026]** The inference code and identity generator are ready.
 * **[Nov 2025]** The generated VIPerson and pre-trained ReID models are now available. Enjoy it! 🚀
 * **[June 2025]** 🎉 Our paper has been accepted by ICCV 2025!
 
@@ -49,7 +49,7 @@ We provide the model weights for easy reproduction and future research.
 
 -   [x] Release pre-trained models.
 -   [x] Release the **VIPerson** dataset.
--   [ ] Release inference code and identity generator. 
+-   [x] Release inference code and identity generator. 
 -   [ ] Add training scripts for more downstream ReID models.
 
 ## Citing VIPerson
