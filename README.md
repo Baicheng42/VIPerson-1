@@ -42,7 +42,19 @@ We provide the model weights for easy reproduction and future research.
 
 | Model               | Download Link                                                                                           |
 | :------------------ | :------------------------------------------------------------------------------------------------------ |
-| **VIPerson checkpoint** | [Google Drive](https://your_google_drive_link_here) / [Baidu Cloud](https://pan.baidu.com/s/1w4CXDxwocNGuXRE65NinkQ)(Access Code: `qtxy`) |
+| **VIPerson checkpoint** | [Google Drive](https://drive.google.com/file/d/1dWg3oMuk7SKLe5R_4RhreCyL0O2JzGmN/view?usp=drive_link) / [Baidu Cloud](https://pan.baidu.com/s/1w4CXDxwocNGuXRE65NinkQ)(Access Code: `qtxy`) |
+
+### Identity Generator Weights
+
+The following weights are distributed separately and are not included in this Git repository. Download each file, keep the filename shown below, and place it at the corresponding path relative to the repository root. If a weight file already exists at that location, replace it with the downloaded file.
+
+| Weight file | Download | Destination path |
+| :---------- | :------- | :--------------- |
+| `first_stage_decoder_state_dict.pt` | [Google Drive](https://drive.google.com/file/d/16IffdhIxFRDRbeV1HopOJ-hqKuE9rBz5/view?usp=sharing) | `ID_generator/models/autoencoder/first_stage_decoder_state_dict.pt` |
+| `first_stage_encoder_state_dict.pt` | [Google Drive](https://drive.google.com/file/d/1_5fpHZxn6UOw9zQODTiacXpL0sChyR5c/view?usp=sharing) | `ID_generator/models/autoencoder/first_stage_encoder_state_dict.pt` |
+| `Elastic_R100_295672backbone.pth` | [Google Drive](https://drive.google.com/file/d/119BxcwtECN0FsccJ_mIhAYmNorBKVarW/view?usp=sharing) | `ID_generator/utils/Elastic_R100_295672backbone.pth` |
+
+See the [Identity Generator README](ID_generator/README.md) for weight setup, training, and generation instructions.
 
 
 ## ✅ TODO List

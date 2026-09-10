@@ -2,6 +2,20 @@
 ## Overview
 This document describes the data preparation and model execution workflow for identity generator.
 
+## Download and Place Required Weights
+
+Before extracting embeddings, training, or generating identities, download the following files from Google Drive. These weights are not included in the Git repository. Keep the filenames exactly as listed and place them at the following paths, relative to the `ID_generator/` directory. If files with these names already exist, replace them with the downloaded weights.
+
+| Weight file | Download | Destination within `ID_generator/` |
+| :---------- | :------- | :-------------------------------- |
+| `first_stage_decoder_state_dict.pt` | [Google Drive](https://drive.google.com/file/d/16IffdhIxFRDRbeV1HopOJ-hqKuE9rBz5/view?usp=sharing) | `models/autoencoder/first_stage_decoder_state_dict.pt` |
+| `first_stage_encoder_state_dict.pt` | [Google Drive](https://drive.google.com/file/d/1_5fpHZxn6UOw9zQODTiacXpL0sChyR5c/view?usp=sharing) | `models/autoencoder/first_stage_encoder_state_dict.pt` |
+| `Elastic_R100_295672backbone.pth` | [Google Drive](https://drive.google.com/file/d/119BxcwtECN0FsccJ_mIhAYmNorBKVarW/view?usp=sharing) | `utils/Elastic_R100_295672backbone.pth` |
+
+Run the commands below from the `ID_generator/` directory. The autoencoder files are loaded relative to `paths.root` in `configs/paths/gpu_cluster.yaml`; ensure this setting resolves to your `ID_generator/` directory when the script runs. You can set it to the absolute path of that directory.
+
+The VIPerson checkpoint download is listed separately in the [main README](../README.md#-pre-trained-models). The three files above do not replace the identity generator training checkpoint referenced by `training.checkpoint.path` in the steps below.
+
 ## Data Preparation
 Prepare two types of resources as follows:
 - Image dataset with fixed unified poses
