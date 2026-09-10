@@ -46,8 +46,6 @@ We provide the model weights for easy reproduction and future research.
 
 ### Identity Generator Weights
 
-The following weights are distributed separately and are not included in this Git repository. Download each file, keep the filename shown below, and place it at the corresponding path relative to the repository root. If a weight file already exists at that location, replace it with the downloaded file.
-
 | Weight file | Download | Destination path |
 | :---------- | :------- | :--------------- |
 | `first_stage_decoder_state_dict.pt` | [Google Drive](https://drive.google.com/file/d/16IffdhIxFRDRbeV1HopOJ-hqKuE9rBz5/view?usp=sharing) | `ID_generator/models/autoencoder/first_stage_decoder_state_dict.pt` |
